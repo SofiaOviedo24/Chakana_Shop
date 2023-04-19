@@ -8,12 +8,32 @@
 .logo {
     width: 13rem;
     height: 5.5rem;
-    margin-left: .5rem;
+    margin-left: 2rem;
     margin-top: 1rem;
+    
 }
 
 .cart {
     color: #b8b852;
-    width: 2rem;
-    height: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    
+}
+
+.iconmenu {
+
+display: flex;
+width: 100%;
+justify-content: right;
+align-items: center;
+margin-right: 2rem;
+gap: 1rem;
+}
+
+.user{
+
+    color: #b8b852;
+    width: 1.65rem;
+    height: 1.65rem;
+    
 }
