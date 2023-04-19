@@ -1,9 +1,9 @@
-import React from 'react'
+import Navbar from './Componentes/Navbar';
 
-function App() {
-  return (
-    <div>App</div>
-  )
-}
+const App = () => {
+  return <>
+  <Navbar/>
+  </>;
+};
 
-export default App
+export default App;
