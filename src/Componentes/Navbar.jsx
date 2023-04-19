@@ -6,9 +6,7 @@ const Navbar = () => {
       <picture className={NavbarStyle.logo}>
         <img src="/imgs/01 logo.png" alt="Logo tejidos Chakana" />
       </picture>
-      <button className={NavbarStyle.iconcart}>
-        <FaShoppingCart />
-      </button>
+      <FaShoppingCart />
     </section>
   );
 };

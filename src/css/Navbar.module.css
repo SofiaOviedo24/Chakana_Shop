@@ -10,8 +10,11 @@
     height: 5.5rem;
     margin-left: .5rem;
     margin-top: 1rem;
-
 }
 
 
-
+.cart {
+    color: #b8b852;
+    width: 3rem;
+    height: 3rem;
+}
