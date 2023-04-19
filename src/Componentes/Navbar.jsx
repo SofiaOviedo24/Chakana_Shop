@@ -1,4 +1,4 @@
-import NavbarStyle from "./css/Navbar.module.css";
+import NavbarStyle from "../css/Navbar.module.css";
 const Navbar = () => {
   return (
   <section className={NavbarStyle.titulo}>
