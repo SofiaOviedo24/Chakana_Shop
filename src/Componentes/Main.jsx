@@ -3,6 +3,9 @@ import MainStyle from "../css/Main.module.css";
 const Main = () => {
   return (
     <section className={MainStyle.galeria}>
+      <article className={MainStyle.left}>
+        
+      </article>
       <article className={MainStyle.right}>
         <picture>
           <img src="/imgs/03_P2.jpg" alt="Strap 01" />
