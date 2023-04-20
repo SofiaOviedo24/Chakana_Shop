@@ -19,9 +19,7 @@ const Main = () => {
         <picture className={MainStyle.pic5}>
           <img src="/imgs/10_P9.jpg" alt="Strap 10"/>
         </picture>
-        <picture className={MainStyle.pic6}>
-          <img src="/imgs/11_P10.jpg" alt="Strap 11"/>
-        </picture>
+
       </article>
       <article className={MainStyle.right}>
         <picture className={MainStyle.pic7}>
