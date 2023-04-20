@@ -17,7 +17,7 @@
     color: #b8b852;
     width: 1.75rem;
     height: 1.75rem;
-    
+    cursor: pointer;
 }
 
 .iconmenu {
@@ -28,6 +28,7 @@ justify-content: right;
 align-items: center;
 margin-right: 2rem;
 gap: 1rem;
+
 }
 
 .user{
@@ -35,5 +36,6 @@ gap: 1rem;
     color: #b8b852;
     width: 1.65rem;
     height: 1.65rem;
+    cursor: pointer;
     
 }
