@@ -3,7 +3,9 @@ import MainStyle from "../css/Main.module.css";
 const Main = () => {
   return (
     <section className={MainStyle.shop}>
+
       <section className={MainStyle.galeria}>
+
         <article className={MainStyle.left}>
           <picture className={MainStyle.pic1}>
             <img src="/imgs/06_P5.jpg" alt="Strap 06" />
@@ -21,6 +23,7 @@ const Main = () => {
             <img src="/imgs/10_P9.jpg" alt="Strap 10" />
           </picture>
         </article>
+
         <article className={MainStyle.right}>
           <picture className={MainStyle.pic7}>
             <img src="/imgs/03_P2.jpg" alt="Strap 01" />
@@ -35,11 +38,13 @@ const Main = () => {
             <img src="/imgs/02_P1.jpg" alt="tejido carlos pizarro" />
           </picture>
         </article>
+
       </section>
       <span>
         <button className={MainStyle.catalogo}>C A T A L O G O</button>
       </span>
     </section>
+    
   );
 };
 
