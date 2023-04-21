@@ -1,6 +1,6 @@
 .galeria {
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 0.3fr 0.3fr 0.3fr;
   grid-template-rows: 0.3fr 0.7fr 0.5fr 0.5fr;
@@ -65,19 +65,22 @@
   grid-row: 2/5;
   overflow: hidden;
 }
+
 .pic11 {
   grid-column: 3/4;
   grid-row: 4/5;
   overflow: hidden;
 }
+
 .catalogo {
   display: flex;
   justify-content: center;
   }
+
 .catalogo button {
 width: 9.5rem;
 height: 2rem;
-background-color: #bfbf75;
+background-color: #d2d2d2;
 border-radius: 5px;
 justify-content: center;}
 
