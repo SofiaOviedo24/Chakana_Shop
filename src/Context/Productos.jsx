@@ -10,7 +10,7 @@ const ProductosProvider = function ({ children }) {
     }
     return productos[productos.length - 1].id + 1;
   };
-  const Agregar = function ({ name, precio, descripción, imagen, categoria }) {
+  const agregar = function ({ name, precio, descripción, imagen, categoria }) {
     setproductos([
       ...productos,
       { id: ProximoID(), name, precio, descripción, imagen, categoria },
@@ -24,7 +24,7 @@ const ProductosProvider = function ({ children }) {
 };
 
  return (
-    <ProductosContext.Provider value={{productos, agregar, eliminar}}>
+    <ProductosContext.Provider value={{catalogo:productos, agregar, eliminar}}>
         {children}
     </ProductosContext.Provider>
  );  

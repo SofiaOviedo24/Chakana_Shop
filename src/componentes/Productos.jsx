@@ -3,26 +3,33 @@ import ProductosContext from "../Context/Productos";
 import ProductoContext from "../Context/Producto";
 
 const Productos = function () {
-  const { producto, setProducto } = useContext(ProductoContext);
-  const { productos } = useContext(ProductosContext);
+  const { setProducto } = useContext(ProductoContext);
+  const { catalogo } = useContext(ProductosContext);
   return (
     <section>
       <ul>
-        {productos.map((producto) =>(
-          <li key={producto.id}
-          onClick={function(){
-            setProducto(producto)
-          }}
+        {catalogo.map((producto) => (
+          <li
+          key={producto.id}
+            
           >
-          <picture>
-              <img src={producto.imagen} alt=""/>
-          </picture>
-            <h3>{producto.name}</h3>
+            <picture>
+              <img src={producto.imagen} alt="" />
+            </picture>
+            <h1>
+              {producto.name}COP{producto.precio}
+              <form onSubmit={function (e) {
+              e.preventDefault() 
+              setProducto(producto);
+            }}>
+              <button>Ver mas</button>
+            </form>
+            </h1>
           </li>
         ))}
       </ul>
     </section>
   );
-  };
+};
 
 export default Productos;
