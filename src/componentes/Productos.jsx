@@ -25,5 +25,4 @@ const Productos = function () {
   );
   };
 
-     
-  
+export default productos;
