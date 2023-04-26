@@ -1,6 +1,6 @@
 import Navbar from "./Componentes/Navbar";
 import Main from "./Componentes/Main"
-import Catalogo from "./Componentes/Catalogo";
+import Catalogo from "./componentes/Producto";
 
 const App = () => {
   return (
