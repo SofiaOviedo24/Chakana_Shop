@@ -1,7 +1,7 @@
-import Navbar from "./Componentes/Navbar";
-import Main from "./Componentes/Main";
-import Productos from "./Componentes/Productos";
-import Detalle from "./Componentes/Detalle";
+import Navbar from "./componentes/Navbar";
+import Main from "./componentes/Main";
+import Productos from "./componentes/Productos";
+import Detalle from "./componentes/Detalle";
 const App = () => {
   return (
     <>
