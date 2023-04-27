@@ -11,7 +11,8 @@ const Productos = function () {
     <section className={ProductosStyle.galeria}>
       <ul className={ProductosStyle.galeriaproductos}>
         {catalogo.map((producto) => (
-          <li key={producto.id}>
+          <li key={producto.id}
+          onclick={function () {setProducto(producto)}}>
             <picture className={ProductosStyle.imgn}>
               <img src={producto.imagen} alt="" />
             </picture>
@@ -25,12 +26,6 @@ const Productos = function () {
                       <FaShoppingCart title="Carticon" />
                     </span>
                   </button>
-                  <form
-                    onSubmit={function (e) {
-                      e.preventDefault();
-                      setProducto(producto);
-                    }}
-                  ></form>
             </h1>
           </li>
         ))}
