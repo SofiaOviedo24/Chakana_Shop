@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import ProductoContext from "../Context/Producto";
-import CartContext from "../Context/Cart";
+import ProductoContext from "../context/Producto";
+import CartContext from "../context/Cart";
 
 const Detalle = function () {
   const { producto, setProducto } = useContext(ProductoContext);

@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import catalogoData from "../Data/productos";
+import catalogoData from "../data/productos";
 
 const ProductosContext = createContext();
 const ProductosProvider = function ({ children }) {

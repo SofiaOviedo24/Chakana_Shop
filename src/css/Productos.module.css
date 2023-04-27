@@ -6,44 +6,57 @@
     justify-content: center;
 }
 .galeriaproductos{
-    width: 78vh;
+    width: 100vh;
     list-style: none;
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 4fr 4fr;
     padding-top: 4rem;
     padding-bottom: 5rem;
     gap: 5rem 7rem;
     overflow: hidden;
     
 }
-.galeriainfo{
+.galeriainfo {
     display: flex;
     font-family: 'Anuphan', sans-serif;
     font-size: 13px;
-    justify-content:  center;
     flex-direction: column;
     align-items:center;
-    margin-top: -3vh;
-    
+    margin-top: 0.3rem;
+
+}
+.info {
+    width: 30vh;
+    justify-content: center;
+    display: flex;
+    font-family: 'Anuphan', sans-serif;
+    font-size: 11px;
+}
+.imgn img {
+    width: 40vh;
+    height: auto;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .Botonagregar{
     display: flex;
-    background-color: #e5e4e4;
-    border: 1px solid #5e5e5e; 
-    width: 20vh;
-    height: 1.4rem;
+    background-color: #e1dfdf;
+    border: 1px solid #b9b7b7; 
+    width: 18vh;
+    height: 1.3rem;
     align-items:center;
     justify-content: center;
     margin-top: 1vh;
     font-family: 'Inter', sans-serif;
-    font-size: 9px;
+    font-size: 8px;
 } 
 .Botonagregar span{ 
     margin-top: 0.2vh;
     padding-left: 0.5vh;
-    color: #5e5e5e;
+    color: #828080;
     font-size: 15px;
 } 
+
+
  
 
 
