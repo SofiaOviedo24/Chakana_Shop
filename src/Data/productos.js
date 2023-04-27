@@ -141,7 +141,7 @@ catalogoData.push ({
     name:"Strap Dignidad",
     precio: "100.000",
     descripcion:"Strap para cámara tejido a mano en combinación de tonos azules, amarillo, naranja, blanco beige y cafe con 70 cms de largo x 6 cms de ancho aproximado. Nuestros diseños son únicos y pueden ser personalizados, bajo altos estandares de calidad.",
-    imagen:"/imgs/29_SC02.jpg",
+    imagen:"/imgs/29_SC06.jpg",
     categoria:"Straps",
 });
 export default catalogoData;
