@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100&family=Inter&display=swap');
+.galeria{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+.galeriaproductos{
+    width: 78vh;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    gap: 5rem 7rem;
+    overflow: hidden;
+    
+}
+.galeriainfo{
+    display: flex;
+    font-family: 'Anuphan', sans-serif;
+    font-size: 13px;
+    justify-content:  center;
+    flex-direction: column;
+    align-items:center;
+    margin-top: -3vh;
+    
+}
+.Botonagregar{
+    display: flex;
+    background-color: #e5e4e4;
+    border: 1px solid #5e5e5e; 
+    width: 20vh;
+    height: 1.4rem;
+    align-items:center;
+    justify-content: center;
+    margin-top: 1vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+} 
+.Botonagregar span{ 
+    margin-top: 0.2vh;
+    padding-left: 0.5vh;
+    color: #5e5e5e;
+    font-size: 15px;
+} 
+ 
+
+
