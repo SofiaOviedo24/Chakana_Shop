@@ -1,7 +1,7 @@
-import ProductosStyle from "../Css/Productos.module.css";
+import ProductosStyle from "../css/Productos.module.css";
 import React, { useContext } from "react";
-import ProductosContext from "../Context/Productos";
-import ProductoContext from "../Context/Producto";
+import ProductosContext from "../context/Productos";
+import ProductoContext from "../context/Producto";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Productos = function () {
