@@ -2,7 +2,7 @@ import ProductosStyle from "../css/Productos.module.css";
 import React, { useContext } from "react";
 import ProductosContext from "../context/Productos";
 import ProductoContext from "../context/Producto";
-import { FaShoppingCart } from "react-icons/fa";
+import { GoEye } from "react-icons/go";
 
 const Productos = function () {
   const { setProducto } = useContext(ProductoContext);
@@ -11,12 +11,7 @@ const Productos = function () {
     <section className={ProductosStyle.galeria}>
       <ul className={ProductosStyle.galeriaproductos}>
         {catalogo.map((producto) => (
-          <li
-            key={producto.id}
-            onClick={function () {
-              setProducto(producto);
-            }}
-          >
+          <li>
             <picture className={ProductosStyle.imgn}>
               <img src={producto.imagen} alt="" />
             </picture>
@@ -24,10 +19,15 @@ const Productos = function () {
               {producto.name}
               <br></br>
               <h2 className={ProductosStyle.info}>$ {producto.precio} COP</h2>
-              <button className={ProductosStyle.Botonagregar}>
-                AGREGAR
+              <button
+                className={ProductosStyle.Botonagregar}
+                key={producto.id}
+                onClick={function () {
+                  setProducto(producto);
+                }}>
+                Ver más
                 <span>
-                  <FaShoppingCart title="Carticon" />
+                  <GoEye title="eye" />
                 </span>
               </button>
             </h1>
