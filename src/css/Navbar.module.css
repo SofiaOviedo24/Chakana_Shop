@@ -3,6 +3,10 @@
     height: 6rem;
     width: 100%;
     display: flex;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
    }
 
 .logo {
