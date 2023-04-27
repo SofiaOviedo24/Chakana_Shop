@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { FaShoppingCart, FaTimes } from "react-icons/fa";
 import CartContext from "../context/Cart";
-
+import CarritoStyle from "../css/Carrito.module.css"
 const Carrito = function () {
   const { cart, actualizar, eliminar } = useContext(CartContext);
   return (
     <>
-      <FaShoppingCart />
-      <section>
+      <FaShoppingCart className={CarritoStyle.icon} />
+      <section className={CarritoStyle.items}>
         {cart && cart.items.length > 0 ? (
           <ul>
             {cart.items.map(function (item) {
