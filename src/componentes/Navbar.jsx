@@ -1,5 +1,6 @@
 import NavbarStyle from "../css/Navbar.module.css";
-import { FaShoppingCart, FaUserAlt } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
+import Carrito from "./Carrito";
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
       </picture>
       <span className={NavbarStyle.iconmenu}>
         <FaUserAlt title="User icon" className={NavbarStyle.user} />
-        <FaShoppingCart title="Cart icon" className={NavbarStyle.cart} />
+        <Carrito/>
       </span>
     </section>
   );

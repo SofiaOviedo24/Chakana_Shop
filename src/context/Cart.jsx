@@ -1,10 +1,11 @@
 import { createContext, useState, useContext } from "react";
+import ProductosContext from "../context/Productos"
 
 const CartContext = createContext({ items: [], subtotal: 0 });
 
 const CartProvider = function ({ children }) {
   const [cart, setCart] = useState({ items: [], subtotal: 0 });
-  const { producto } = useContext(ProductoContext);
+  const { catalogo } = useContext(ProductosContext);
   const siExiste = function (id) {
     if (cart.items.length > 0) {
       return (
@@ -43,8 +44,8 @@ const CartProvider = function ({ children }) {
           }, 0),
       });
     } else {
-      let producto = productos.find(function (product) {
-        return producto.id == id;
+      let producto = catalogo.find(function (product) {
+        return product.id == id;
       });
       setCart({
         items: [...cart.items, { ...producto, cantidad: 1 }],
