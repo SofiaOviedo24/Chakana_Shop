@@ -11,9 +11,10 @@
     height: calc(100vh - 6rem);
     top: 6rem;
     right: -25vw;
-    background-color: #b8b852;
+    background-color: #d8d8d8;
     z-index: 4;
     transition: all 300ms ease-in-out;
+    opacity: 90%;
 }
 
 .active{
