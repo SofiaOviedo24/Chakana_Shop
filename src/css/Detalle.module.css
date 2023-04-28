@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .inicio{
     display: flex;
@@ -22,6 +22,8 @@
    
 }
 .item img { 
+    display: flex;
     width: 40vh;
+    height: auto;
     
 }

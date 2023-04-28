@@ -22,8 +22,9 @@ const Detalle = function () {
             </button>
           </form>
           <h2>
-            {producto.name} - COP{producto.precio}
+            {producto.name}  
           </h2>
+          <h3> COP{producto.precio} </h3>
           <p>{producto.descripcion}</p>
           <picture className={DetalleStyle.item}>
             <img src={producto.imagen} alt="" />

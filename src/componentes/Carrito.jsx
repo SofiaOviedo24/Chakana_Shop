@@ -15,7 +15,7 @@ const Carrito = function () {
               return (
                 <li key={item.id}>
                   <h2>
-                    {item.name} - COP{item.price}
+                    {item.name} - COP{item.precio}
                   </h2>
                   <form
                     onSubmit={function (e) {
