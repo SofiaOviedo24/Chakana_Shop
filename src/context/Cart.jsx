@@ -27,6 +27,7 @@ const CartProvider = function ({ children }) {
     return false;
   };
   const agregar = function (id) {
+    console.log(id)
     if (siExiste(id)) {
       setCart({
         items: [...cart.items].map(function (item) {
@@ -37,7 +38,7 @@ const CartProvider = function ({ children }) {
         }),
         subtotal: [...cart.items]
           .map(function (item) {
-            return item.precio * item.cantidad;
+            return Number(item.precio) * item.cantidad;
           })
           .reduce(function (acumulador, actual) {
             return (acumulador += actual);
@@ -51,7 +52,7 @@ const CartProvider = function ({ children }) {
         items: [...cart.items, { ...producto, cantidad: 1 }],
         subtotal: [...cart.items]
           .map(function (item) {
-            return item.precio * cantidad;
+            return Number(item.precio) * cantidad;
           })
           .reduce(function (acumulador, actual) {
             return (acumulador += actual);
@@ -70,7 +71,7 @@ const CartProvider = function ({ children }) {
         }),
         subtotal: [...cart.items]
           .map(function (item) {
-            return item.precio * item.cantidad;
+            return Number(item.precio) * item.cantidad;
           })
           .reduce(function (acumulador, actual) {
             return (acumulador += actual);
@@ -89,7 +90,7 @@ const CartProvider = function ({ children }) {
         }),
         subtotal: [...cart.items]
           .map(function (item) {
-            return item.precio * item.cantidad;
+            return Number(item.precio) * item.cantidad;
           })
           .reduce(function (acumulador, actual) {
             return (acumulador += actual);
@@ -102,7 +103,7 @@ const CartProvider = function ({ children }) {
         }),
         subtotal: [...cart.items]
           .map(function (item) {
-            return item.precio * item.cantidad;
+            return Number(item.precio) * item.cantidad;
           })
           .reduce(function (acumulador, actual) {
             return (acumulador += actual);
@@ -111,7 +112,7 @@ const CartProvider = function ({ children }) {
     }
   };
   return (
-    <CartContext.Provider value={(cart, agregar, actualizar, eliminar)}>
+    <CartContext.Provider value={{cart, agregar, actualizar, eliminar}}>
       {children}
     </CartContext.Provider>
   );

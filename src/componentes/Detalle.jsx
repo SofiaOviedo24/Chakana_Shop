@@ -30,7 +30,8 @@ const Detalle = function () {
             <img src={producto.imagen} alt="" />
           </picture>
           <form
-            onSubmit={function () {
+            onSubmit={function(event) {
+              event.preventDefault()
               agregar(producto.id);
             }}
           >
