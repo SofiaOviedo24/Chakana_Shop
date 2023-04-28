@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
+import DetalleStyle from "../css/Detalle.module.css";
 import ProductoContext from "../context/Producto";
 import CartContext from "../context/Cart";
+import { RxCross1 } from "react-icons/rx";
 
 const Detalle = function () {
   const { producto, setProducto } = useContext(ProductoContext);
@@ -8,19 +10,22 @@ const Detalle = function () {
   return (
     <>
       {producto == null ? null : (
-        <article>
-          <form
+        <section className={DetalleStyle.inicio}>
+        <article className={DetalleStyle.contenedor}>
+          <form 
             onSubmit={function () {
               setProducto(null);
             }}
           >
-            <button>cerrar</button>
+            <button>
+              <RxCross1 title="Cerrar" />
+            </button>
           </form>
           <h2>
-            {producto.name} - U$D{producto.precio}
+            {producto.name} - COP{producto.precio}
           </h2>
           <p>{producto.descripcion}</p>
-          <picture>
+          <picture className={DetalleStyle.item}>
             <img src={producto.imagen} alt="" />
           </picture>
           <form
@@ -31,6 +36,7 @@ const Detalle = function () {
             <button>agregar</button>
           </form>
         </article>
+        </section>
       )}
     </>
   );
