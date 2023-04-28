@@ -9,13 +9,16 @@ const Main = () => {
           <img src="/imgs/06_P5.jpg" alt="Strap 06" />
         </picture>
         <picture className={MainStyle.pic2}>
-          <img src="/imgs/07_P6.jpg" alt="Strap 07" />
+          <img src="/imgs/07_P6.jpg" alt="Strap 07" className={MainStyle.img07}/>
+          <p className={MainStyle.texto07}>
+            Bogotá Fashion Week 2022: Flor de Venus reafirma cada uno de los valores de sostenibilidad detrás de MAZ (Manuela Alvarez), entendiendo nuestra relación con la moda como una responsabilidad con nuestra cultura y tradición textil.
+          </p>
         </picture>
 
         <picture className={MainStyle.pic3}>
           <img src="/imgs/08_P7.jpg" alt="Strap 08" className={MainStyle.img08} />
           <p className={MainStyle.texto08}>
-            Urdiendo La Vida para Tejer la Paz: Proyecto en cual se encontraron hombres y mujeres víctimas del conflicto, familiares de miembros de la fuerza pública asesinados en el marco del conflicto, víctimas de Crímenes de Estado y excombatientes de las Farc-Ep firmantes de Paz para juntar sus manos y tejer la memoria, la paz y la reconciliación por medio de más de 30 piezas cargadas de significado, por eso queremos invitarles a nuestra exposición.
+            Urdiendo La Vida para Tejer la Paz: Proyecto en cual se encontraron hombres y mujeres víctimas del conflicto,  y tejer la memoria, la paz y la reconciliación por medio de más de 30 piezas cargadas de significado, por eso queremos invitarles a nuestra exposición.
           </p>
           
         </picture>
