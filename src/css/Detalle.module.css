@@ -25,5 +25,17 @@
     display: flex;
     width: 40vh;
     height: auto;
+
+}
+.cerrar{
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
     
+}
+.cerrar button{
+    background-color:snow;
+    width: 2rem;
+    height: 2rem;
+
 }

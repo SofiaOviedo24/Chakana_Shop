@@ -6,19 +6,19 @@ import { RxCross1 } from "react-icons/rx";
 
 const Detalle = function () {
   const { producto, setProducto } = useContext(ProductoContext);
-  const { agregar } = useContext(CartContext);
+  const { agregar} = useContext(CartContext);
   return (
     <>
       {producto == null ? null : (
         <section className={DetalleStyle.inicio}>
         <article className={DetalleStyle.contenedor}>
-          <form 
+          <form className={DetalleStyle.cerrar}
             onSubmit={function () {
               setProducto(null);
             }}
           >
             <button>
-              <RxCross1 title="Cerrar" />
+              <RxCross1 title="Cerrar"/>
             </button>
           </form>
           <h2>
