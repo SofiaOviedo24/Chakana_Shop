@@ -145,4 +145,30 @@
     }
   }
 
-  
+  @media (max-width: 420px){
+    .contenedor{
+        width: 70vw;
+        display: flex;
+        height: 50vh;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .item img {
+        display: flex;
+        width: 65vw;
+        padding-bottom: 0;
+    }
+
+    .info{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .info p{
+        padding-left: 18px;
+    }
+  }
