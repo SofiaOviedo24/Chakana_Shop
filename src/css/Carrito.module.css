@@ -101,4 +101,29 @@
     border-bottom: 1px solid black;
 }
 
+@media (max-width: 768px){
+    .items{
+        width: 25vw;
+    }
+    .view{
+      width:10rem;
+      height: 12rem;
+      flex-direction: column;
+    }
+    .detail{
+        font-size: 12px;
+        align-items: center;
+        line-height: 5px;
+        margin-top: 1rem;
+        
+    }
+    .imgproduct img{
+        margin-left: 1.5rem;
+        width: 9rem
+    };
+
+
+
+}
+
 

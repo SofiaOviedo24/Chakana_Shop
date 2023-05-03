@@ -85,7 +85,16 @@ nav{
  height: 1.65rem;
  cursor: pointer;
  margin-right: 1rem;
-
-
-
 }
+
+@media (max-width: 768px){
+   .ctc{
+     width: auto;
+     height: auto;
+   }
+
+   .info {
+      margin-top: 5rem;
+
+   }
+ }

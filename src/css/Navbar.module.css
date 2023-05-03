@@ -43,3 +43,11 @@ gap: 1rem;
     cursor: pointer;
     
 }
+
+
+@media (max-width: 768px){
+    .titulo{
+        flex: 0;
+    }
+
+}

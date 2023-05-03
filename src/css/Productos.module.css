@@ -59,7 +59,12 @@
     font-size: 15px;
 } 
 
-
+@media (max-width: 768px){
+    .galeriaproductos{
+      width: auto;
+      height: auto;
+    }
+  }
  
 
 
