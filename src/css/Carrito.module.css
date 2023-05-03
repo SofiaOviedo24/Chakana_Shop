@@ -131,12 +131,16 @@
 @media (max-width: 420px){
     .items{
         width: 100vw;
-        right: 100vw;
+        right: -100vw;
         
     }
 
+    .active{
+        right: 0;
+    }
+
     .view{
-        width: 12.8rem;
+        width: 100vw;
     }
 }
 
