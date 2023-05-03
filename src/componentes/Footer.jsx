@@ -1,5 +1,5 @@
 import FooterStyle from "../css/Footer.module.css";
-import { FaUserAlt } from "react-icons/fa"
+import { TiSocialInstagram} from "react-icons/ti";
 
 const Footer = () => {
  return (
@@ -11,7 +11,7 @@ const Footer = () => {
       <form action="#" method="post" className={FooterStyle.newsletter}>
         <input type="E-mail" placeholder="E-mail" id="E-mail" name="E-mail" />
         <button type="submit">
-        <FaUserAlt title="Instagram icon"  />
+        <TiSocialInstagram title="Instagram icon"  />
         </button>
         <input
           type="Mensaje"
@@ -29,7 +29,7 @@ const Footer = () => {
         <h4>Bogotá DC. - Colombia</h4>
         <nav>
           <a href="https://www.instagram.com/tejidoschakana/" target="blank">
-          <FaUserAlt title="Instagram icon" className={FooterStyle.ig} />
+          <TiSocialInstagram title="Instagram icon" className={FooterStyle.ig} />
           </a>
         </nav>
       </article>
