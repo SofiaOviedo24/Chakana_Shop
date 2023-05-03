@@ -8,8 +8,8 @@ const Productos = function () {
   const { setProducto } = useContext(ProductoContext);
   const { catalogo } = useContext(ProductosContext);
   return (
-    <section className={ProductosStyle.galeria}>
-      <ul className={ProductosStyle.galeriaproductos}>
+    <section id="Productos" className={ProductosStyle.galeria}>
+      <ul  className={ProductosStyle.galeriaproductos}>
         {catalogo.map((producto) => (
           <li>
             <picture className={ProductosStyle.imgn}>

@@ -11,9 +11,15 @@ const Detalle = function () {
   return (
     <>
       {producto == null ? null : (
+<<<<<<< HEAD
         <section className={DetalleStyle.inicio}>
         <span className={DetalleStyle.contenedor}>
           <form className={DetalleStyle.cerrar}
+=======
+        <section id="Detalle" className={DetalleStyle.inicio}>
+        <article className={DetalleStyle.contenedor}>
+          <form 
+>>>>>>> melendez
             onSubmit={function () {
               setProducto(null);
             }}
