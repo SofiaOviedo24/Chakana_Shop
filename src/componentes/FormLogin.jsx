@@ -1,7 +1,9 @@
-import Navbar from "./componentes/Navbar";
-import Main from "./componentes/Main";
-import Productos from "./componentes/Productos";
-import Detalle from "./componentes/Detalle";
+import  {useState} from 'react';
+import LoginStyle from '../css/login.modules.css'
+import Navbar from "./Navbar";
+import Main from "./Main";
+import Productos from "./Productos";
+import Detalle from "./Detalle";
 
 export const ForLogin = () => {
 
@@ -33,13 +35,13 @@ export const ForLogin = () => {
     return (
         <selection  className={LoginStyle.contenedor}>
             
-                <form id='forma'>
-                    <h2>Acceso</h2>
-                    <article className={LoginStyle.elemento}>
-                        <label htmlFor="usuario">
-                            Usuario
-                        </label>
-                        <input type="text" id='usuario' name='usuario' onChange={(e) => setUse(e.target.value)} required='true'/>
+            <form id='forma'>
+                <h2>Acceso</h2>
+                <article className={LoginStyle.elemento}>
+                    <label htmlFor="usuario">
+                        Usuario
+                    </label>
+                    <input type="text" id='usuario' name='usuario' onChange={(e) => setUse(e.target.value)} required='true'/>
                     </article>
                     <article className={LoginStyle.elemento}>
                         <label htmlFor="password">
@@ -48,13 +50,12 @@ export const ForLogin = () => {
                         <input type="password" id='password' name='password' onChange={(e) => setPass(e.target.value)} required='true'/>
                     </article>
                     <article class={LoginStyle.elemento}>
-                        <input type="submit" value="Enviar" onClick={iniciarSesion}/>
-                    </article>
-                </form>
+                    <input type="submit" value="Enviar" onClick={iniciarSesion}/>
+                </article>
+            </form>
                 
                 {miLogin === "true" && <Navbar usuario={use}/> }    
                 {miLogin === "true" && <Main/> }  
-                {miLogin === "true" && <Catalogo/> } 
                 {miLogin === "true" && <Productos/> } 
                 {miLogin === "true" && <Detalle/> } 
             

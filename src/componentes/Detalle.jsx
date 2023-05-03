@@ -10,7 +10,7 @@ const Detalle = function () {
   return (
     <>
       {producto == null ? null : (
-        <section className={DetalleStyle.inicio}>
+        <section id="Detalle" className={DetalleStyle.inicio}>
         <article className={DetalleStyle.contenedor}>
           <form 
             onSubmit={function () {

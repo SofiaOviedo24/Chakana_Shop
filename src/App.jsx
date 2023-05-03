@@ -1,14 +1,16 @@
-import Navbar from "./componentes/Navbar";
-import Main from "./componentes/Main";
-import Productos from "./componentes/Productos";
-import Detalle from "./componentes/Detalle";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ForLogin from './componentes/FormLogin';
+
+
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Main />
-      <Productos/>
-      <Detalle/>
+      
+      <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<ForLogin />}/>
+      </Routes>
+      </BrowserRouter>
     </>
   );
 };

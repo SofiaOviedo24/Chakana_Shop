@@ -11,14 +11,14 @@ body{
     
 }
 
-.contenedor h2{
+h2{
     
     margin: 0 0 30px;
     padding: 0;
     font-size: 35px;
     color: #4cc9f0;
     text-align: center;
-    width: 600px;
+    width: 365px;
     justify-content: center;
 }
 .usuario{
@@ -31,23 +31,24 @@ form{
     padding: 20px;
     border: 2px solid lightgray;
     background-color: rgba(0, 0, 0, .5);
-    margin: auto;
+    margin: 50px auto;
+    
     
 }
-.contenedor .elemento label{
+label{
     color: #c1bebe;
     justify-content: center;
 }
-.contenedor .elemento input{
+input{
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     color: #fff;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     margin-bottom: 30px;
 }
-.contenedor .elemento input[type="submit"]{
+input[type="submit"]{
     background-color: #f72585;
     border: none;
     letter-spacing: 5px;

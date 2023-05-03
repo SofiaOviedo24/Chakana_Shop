@@ -19,7 +19,18 @@
 .usuario{
     color:  #fff;
 }
-
+button{
+    width: 120px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button:hover{
+    background: #b8b852;
+    transition: .1s;
+    color: #fff;
+}
 
 .cart {
     color: #b8b852;

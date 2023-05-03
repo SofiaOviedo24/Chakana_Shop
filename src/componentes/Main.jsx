@@ -3,7 +3,7 @@ import MainStyle from "../css/Main.module.css";
 
 const Main = () => {
   return (
-    <section>
+    <section id="Main">
       <section className={MainStyle.galeria}>
         <picture className={MainStyle.pic1}>
           <img src="/imgs/06_P5.jpg" alt="Strap 06" />
