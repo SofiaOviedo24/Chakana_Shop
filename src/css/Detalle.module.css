@@ -133,18 +133,14 @@
       width: 80vw;
       height: auto;
     }
-
     .info h1{
         margin-top: 2rem;
     }
-
     .cerrar{
         width: 72vh;
     }
-
     .boton{
         height: 35vh;
         width: 68vw;
-        
     }
   }

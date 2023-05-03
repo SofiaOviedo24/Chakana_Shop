@@ -44,10 +44,8 @@ gap: 1rem;
     
 }
 
-
 @media (max-width: 768px){
     .titulo{
         flex: 0;
     }
-
 }

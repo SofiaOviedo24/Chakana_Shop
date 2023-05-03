@@ -174,8 +174,7 @@ justify-content: center;}
   .galeria{
     width: auto;
     height: auto;
-
-
-  }
+    gap: 0.5rem;
 }
 
+}

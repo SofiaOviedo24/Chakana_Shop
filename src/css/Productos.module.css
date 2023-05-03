@@ -61,10 +61,13 @@
 
 @media (max-width: 768px){
     .galeriaproductos{
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
       width: auto;
-      height: auto;
     }
   }
- 
+
+
 
 
