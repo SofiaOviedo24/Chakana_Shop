@@ -1,6 +1,7 @@
 import FooterStyle from "../css/Footer.module.css";
 import { TiSocialInstagram} from "react-icons/ti";
 
+
 const Footer = () => {
  return (
 

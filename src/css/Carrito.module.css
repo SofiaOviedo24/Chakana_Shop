@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@700&family=Poppins&display=swap');
+
 .icon{
-        color: #b8b852;
-        width: 1.75rem;
-        height: 1.75rem;
-        cursor: pointer;
+    color: #b8b852;
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
 }
 
 .items{
