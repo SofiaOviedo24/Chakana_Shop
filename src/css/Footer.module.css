@@ -98,4 +98,25 @@ nav{
    }
  }
 
+ @media (max-width: 420px){
+   
+   .ctc{
+       width: 26.5rem;
+   }
+
+   .newsletter{
+      display: none;
+      width: 26rem;
+      gap: 0.5rem;
+      height: 5rem;
+      background-color: aqua;
+      border-radius: 0 1rem 1rem 0;
+      
+   }
+   
+   .contact2{
+      margin-top: 3rem;
+   }
+}
+
  
