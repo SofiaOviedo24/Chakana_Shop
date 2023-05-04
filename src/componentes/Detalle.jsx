@@ -11,49 +11,49 @@ const Detalle = function () {
   return (
     <>
       {producto == null ? null : (
-<<<<<<< HEAD
+
         <section className={DetalleStyle.inicio}>
         <span className={DetalleStyle.contenedor}>
           <form className={DetalleStyle.cerrar}
-=======
+
         <section id="Detalle" className={DetalleStyle.inicio}>
-        <article className={DetalleStyle.contenedor}>
-          <form 
+          <article className={DetalleStyle.contenedor}>
+            <form 
 >>>>>>> melendez
-            onSubmit={function () {
-              setProducto(null);
-            }}
-          >
-            <button>
-              <RxCross1  title="Cerrar" className={DetalleStyle.x}/>
-            </button>
-          </form>
-          <picture className={DetalleStyle.item}>
-            <img src={producto.imagen} alt="" />
-          </picture>
-          <article className={DetalleStyle.info}>
-          <h1>
-            {producto.name}  
-          </h1>
-          <h2> Descripción: </h2>
-          <p>{producto.descripcion}</p>
-          <h3> Precio </h3>
-          <h4> ${producto.precio} </h4>
-          </article>
-        </span>
-          
-          <form className={DetalleStyle.boton}
-            onSubmit={function(event) {
-              event.preventDefault()
-              agregar(producto.id);
-            }}
-          >
-            <button> AGREGAR <span><FaShoppingCart title="carrito" /></span></button>
-          </form>
+              onSubmit={function () {
+                setProducto(null);
+              }}
+            >
+              <button>
+                <RxCross1  title="Cerrar" className={DetalleStyle.x}/>
+              </button>
+            </form>
+            <picture className={DetalleStyle.item}>
+              <img src={producto.imagen} alt="" />
+            </picture>
+            <article className={DetalleStyle.info}>
+            <h1>
+              {producto.name}  
+            </h1>
+            <h2> Descripción: </h2>
+            <p>{producto.descripcion}</p>
+            <h3> Precio </h3>
+            <h4> ${producto.precio} </h4>
+            </article>
+          </span>
+            
+            <form className={DetalleStyle.boton}
+              onSubmit={function(event) {
+                event.preventDefault()
+                agregar(producto.id);
+              }}
+            >
+              <button> AGREGAR <span><FaShoppingCart title="carrito" /></span></button>
+            </form>
         </section>
       )}
     </>
-  );
-};
+  )
+}
 
 export default Detalle;

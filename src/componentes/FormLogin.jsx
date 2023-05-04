@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Main from "./Main";
 import Productos from "./Productos";
 import Detalle from "./Detalle";
+import Footer from "./Footer";
 
 export const ForLogin = () => {
 
@@ -58,6 +59,8 @@ export const ForLogin = () => {
                 {miLogin === "true" && <Main/> }  
                 {miLogin === "true" && <Productos/> } 
                 {miLogin === "true" && <Detalle/> } 
+                {miLogin === "true" && <Footer/> } 
+                
             
         </selection>
     )
