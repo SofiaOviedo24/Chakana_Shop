@@ -4,14 +4,19 @@ const Main = () => {
   return (
     <section id="Main">
       <section className={MainStyle.galeria}>
+
         <picture className={MainStyle.pic1}>
-          <img src="/imgs/06_P5.jpg" alt="Strap 06" />
+          <img src="/imgs/06_P5.jpg" alt="Strap 06" className={MainStyle.img06}/>
+          <p className={MainStyle.texto06}>
+          Tejidos Chakana esun emprendimeinto que inicia en el año 2011 por el artesano e histoariador Mateo Perea. 
+          En el 2021 T.C se vincula al Proceso de Paz, trabajando de la mano con excombatientes de las FARC, entre otras personas y agentes victimas de conflicto armado en Colombia.
+          Tejidos Chakana le apuesta a la paz y a la reincorporación económica de los excombatientes, quienes debido a su pasado, les resulta complejo vincularse a la economía tradicional.
+          </p>
         </picture>
+
         <picture className={MainStyle.pic2}>
           <img
-            src="/imgs/07_P6.jpg"
-            alt="Strap 07"
-            className={MainStyle.img07}
+            src="/imgs/07_P6.jpg"alt="Strap 07"className={MainStyle.img07}
           />
           <p className={MainStyle.texto07}>
             Bogotá Fashion Week 2022: Flor de Venus reafirma cada uno de los
@@ -84,3 +89,6 @@ const Main = () => {
 };
 
 export default Main;
+
+
+
