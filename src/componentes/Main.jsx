@@ -1,6 +1,5 @@
 import MainStyle from "../css/Main.module.css";
 
-
 const Main = () => {
   return (
     <section id="Main">
@@ -9,18 +8,31 @@ const Main = () => {
           <img src="/imgs/06_P5.jpg" alt="Strap 06" />
         </picture>
         <picture className={MainStyle.pic2}>
-          <img src="/imgs/07_P6.jpg" alt="Strap 07" className={MainStyle.img07}/>
+          <img
+            src="/imgs/07_P6.jpg"
+            alt="Strap 07"
+            className={MainStyle.img07}
+          />
           <p className={MainStyle.texto07}>
-            Bogotá Fashion Week 2022: Flor de Venus reafirma cada uno de los valores de sostenibilidad detrás de MAZ (Manuela Alvarez), entendiendo nuestra relación con la moda como una responsabilidad con nuestra cultura y tradición textil.
+            Bogotá Fashion Week 2022: Flor de Venus reafirma cada uno de los
+            valores de sostenibilidad detrás de MAZ (Manuela Alvarez),
+            entendiendo nuestra relación con la moda como una responsabilidad
+            con nuestra cultura y tradición textil.
           </p>
         </picture>
 
         <picture className={MainStyle.pic3}>
-          <img src="/imgs/08_P7.jpg" alt="Strap 08" className={MainStyle.img08} />
+          <img
+            src="/imgs/08_P7.jpg"
+            alt="Strap 08"
+            className={MainStyle.img08}
+          />
           <p className={MainStyle.texto08}>
-            Urdiendo La Vida para Tejer la Paz: Proyecto en cual se encontraron hombres y mujeres víctimas del conflicto,  y tejer la memoria, la paz y la reconciliación por medio de más de 30 piezas cargadas de significado, por eso queremos invitarles a nuestra exposición.
+            Urdiendo La Vida para Tejer la Paz: Proyecto en cual se encontraron
+            hombres y mujeres víctimas del conflicto, y tejer la memoria, la paz
+            y la reconciliación por medio de más de 30 piezas cargadas de
+            significado, por eso queremos invitarles a nuestra exposición.
           </p>
-          
         </picture>
 
         <picture className={MainStyle.pic4}>
@@ -44,8 +56,10 @@ const Main = () => {
 
         <picture className={MainStyle.pic10}>
           <img
-            src="/imgs/02_P1.jpg" alt="tejido carlos pizarro"
-            className={MainStyle.img10} />
+            src="/imgs/02_P1.jpg"
+            alt="tejido carlos pizarro"
+            className={MainStyle.img10}
+          />
           <p className={MainStyle.texto10}>
             Carlos Pizarro León Gómez: Político y guerrillero cartagenero,
             máximo comandante del grupo Movimiento 19 de abril (M-19), entre
@@ -61,9 +75,10 @@ const Main = () => {
         </picture>
       </section>
       <span className={MainStyle.catalogo}>
-        <button>C A T A L O G O</button>
+        <button>
+          <a href="#Productos">C A T A L O G O</a>
+        </button>
       </span>
-  
     </section>
   );
 };

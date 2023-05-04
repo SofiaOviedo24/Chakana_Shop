@@ -137,8 +137,13 @@
         margin-top: 2rem;
     }
     .cerrar{
-        width: 72vh;
+        width: 80vw;
     }
+
+    .cerrar button{
+        width: 1.5rem;
+    }
+
     .boton{
         height: 35vh;
         width: 68vw;
@@ -149,7 +154,7 @@
     .contenedor{
         width: 70vw;
         display: flex;
-        height: 50vh;
+        height: 55vh;
         flex-direction: column;
         justify-items: center;
         align-items: center;
@@ -170,5 +175,37 @@
 
     .info p{
         padding-left: 18px;
+        padding-bottom: 0;
+    }
+
+    .info h2{
+        padding: 0;
+    }
+
+    .boton{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        margin-top: 8rem ;
+    }
+
+    .info h4{
+        margin-bottom: 1rem;
+    }
+
+    .info h3{
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+        
+    }
+
+    .cerrar{
+        width: 20rem;    
+    }
+
+    .cerrar button{
+        width: 1.5rem;
     }
   }
