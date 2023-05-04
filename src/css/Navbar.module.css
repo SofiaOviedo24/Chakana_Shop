@@ -64,3 +64,10 @@ gap: 1rem;
         flex: 0;
     }
 }
+
+@media (max-width: 420px){
+    .titulo{
+        width: 26.5rem;
+    }
+
+}

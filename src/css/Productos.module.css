@@ -68,6 +68,12 @@
     }
   }
 
+  @media (max-width: 420px){
+    .imgn img{
+        width: 30vh;
+    }
+  }
+
 
 
 

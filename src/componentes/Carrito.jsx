@@ -24,7 +24,7 @@ const Carrito = function () {
                   </picture>
                   <article className={CarritoStyle.detail}>
                     <h1> {item.name}</h1>
-                    <h3>COP{item.precio}</h3>
+                    <h3>${item.precio}</h3>
                     <h3>Cantidad {item.cantidad}</h3>
                   </article>
                   <form
@@ -48,7 +48,7 @@ const Carrito = function () {
               );
             })}{" "}
             <li className={CarritoStyle.total}>
-              <h3>Subtotal: COP: {cart.subtotal}.000</h3>
+              <h3>Subtotal: ${cart.subtotal}.000</h3>
             </li>
           </ul>
         ) : (
